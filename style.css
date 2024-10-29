@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #FAF3DD;
+}
+
+/* Header */
+header {
+    background-color: #8BAA88;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #FFD369;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2em;
+    color: #8BAA88;
+    border-bottom: 2px solid #FFD369;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Container for Each Section */
+.about-container, .event-container, .contact-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin: 20px 0;
+}
+
+/* Text Styles */
+.about-text, .event-text, .contact-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Image Styles */
+.about-image img, .event-image img, .contact-image img {
+    max-width: 100%;
+    height: auto;
+} .event-list-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-list-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #8BAA88;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD369;
+    padding-bottom: 10px;
+}
+
+.fancy-event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fancy-event-list li {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr; /* Adjust fractions for column widths */
+    gap: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fancy-event-list li:hover {
+    transform: translateX(5px);
+}
+
+.event-number {
+    font-weight: bold;
+    color: #8BAA88;
+}
+
+.event-date,
+.event-title,
+.event-location {
+    color: #333;
+}
+
+.event-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
