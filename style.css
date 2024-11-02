@@ -98,25 +98,33 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* Ensure the ordered list takes the full width */
 .fancy-event-list {
-    list-style: none;
-    padding: 0;
+    padding: 0;               /* Remove default padding */
+    list-style-type: none;    /* Remove bullets */
+    width: 100%;              /* Ensure it takes full width */
 }
 
-.fancy-event-list li {
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr 2fr; /* Adjust fractions for column widths */
-    gap: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+/* Styling for each button inside list items */
+.fancy-event-list li .event-button {
+    display: flex;            /* Enable flexbox for alignment */
+    justify-content: space-between; /* Space out items evenly */
+    width: 100%;              /* Full width of its parent */
+    padding: 15px;            /* Padding for better click area */
+    margin: 10px 0;           /* Vertical spacing between buttons */
+    border-radius: 5px;       /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333;              /* Text color */
+    text-decoration: none;     /* No underline */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-.fancy-event-list li:hover {
-    transform: translateX(5px);
+/* Hover Effect for List Items */
+.fancy-event-list li:hover .event-button {
+    background-color: #8baa88; /* Green highlight on hover */
+    color: #fff;              /* Change text color to white on hover */
+    transform: translateX(5px); /* Move slightly to the right on hover */
 }
 
 .event-number {
@@ -134,5 +142,56 @@ h2 {
     font-size: 1.1em;
     font-weight: bold;
 }
+
+/* Home Button */
+.home-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #8baa88;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #669970;
+}
+
+/* Event Details Section */
+.event-details-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.event-details-section h1 {
+    font-size: 2em;
+    color: #8BAA88;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFD369;
+    padding-bottom: 10px;
+}
+
+.event-details-section p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #8BAA88;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
 
 
