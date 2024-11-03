@@ -32,7 +32,7 @@
                     <p>Our mission is to preserve the communities of Brampton through community clean ups and building a cooperative community. Participation in our events remain open to all age groups and all that are willing to join. We aim to recruit 100 regular participants by the end of 2025. With valuable volunteering experience along with community experience, inclusivity, integrity and hard work, Brampton can be transformed into a better place.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://abhineet-k1.github.io/BramptonPureCare/Images and Audios/pexels-shvetsa-5029810.jpg" style="float: right; height: 400px; border-radius: 5%;" alt="About Us">
+                    <img src="Images and Audios/pexels-shvetsa-5029810.jpg" style="float: right; height: 400px; border-radius: 5%;" alt="About Us">
                 </div>
             </div>
         </section>
@@ -59,7 +59,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event2.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 2:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -67,7 +67,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event3.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 3:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -75,7 +75,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event4.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 4:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -83,7 +83,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event5.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 5:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -91,7 +91,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event6.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 6:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -99,7 +99,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event7.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 7:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -107,7 +107,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="event8.html" class="event-button">
+                                <a href="#" class="unready-button">
                                     <span class="event-number">Event 8:</span>
                                     <span class="event-date">N/A</span>
                                     <span class="event-title">2 Hour Event</span>
@@ -131,6 +131,15 @@
                 </div>
             </div>
         </section>
+        <script>
+            document.querySelectorAll('.unready-button').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent navigation
+                    alert('This event is not available yet.');
+                });
+            });
+        </script>
     </main>
 </body>
 </html>
+
