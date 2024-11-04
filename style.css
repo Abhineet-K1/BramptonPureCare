@@ -205,9 +205,11 @@ h2 {
     cursor: not-allowed; /* Show not-allowed cursor */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .unready-button:hover {
     background-color: #d1d1d1; /* Slightly darker gray on hover */
 }
+
 
 
 
